@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+#wrapper {
+  background-color: #fff;
+  background-image: url("../images/bg");
+}
+.container{
+  width: 940px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+.logo {
+  display: table;
+  float: left;
+}
+.navigation {
+  display: table;
+  width: 100%;
+}
+.navigation::after {
+  clear: both;
+  content: "";
+}
+.nav {
+  margin: 0;
+  list-style: none;
+  float: right;
+  line-height: 28px;
+
+}
+.nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+#learnmore {
+  height: 30px;
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 0 128px 0;
+
+}
