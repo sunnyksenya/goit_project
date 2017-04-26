@@ -1,31 +1,38 @@
 body {
+  font-family: "Monserrat";
   margin: 0;
+  /*убираем дефолтные маржины с секции боди*/
 }
 #wrapper {
-  background-color: #fff;
   background-image: url("../images/bg");
+  background-size: 100% 680px;
+  background-repeat: no-repeat;
+
 }
 .container{
   width: 940px;
   margin: auto;
-  color: #fff;
-  text-align: center;
 }
-.logo {
-  display: table;
-  float: left;
+.hero {
+  text-align: center;
+  color: #fff;
+  height: 620px;
+
 }
 .navigation {
-  display: table;
-  width: 100%;
+  padding-top: 50px;
+}
+.logo {
+  float: left;
 }
 .navigation::after {
+  display: table;
   clear: both;
   content: "";
 }
 .nav {
   margin: 0;
-  list-style: none;
+  /*list-style: none; не обязательное условие поскольку указан инлайн-блок*/
   float: right;
   line-height: 28px;
 
@@ -37,12 +44,149 @@ body {
 .nav li a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
+}
+.content {
+  margin-top: 150px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 66px;
 }
 #learnmore {
-  height: 30px;
   background: transparent;
   color: #fff;
   border-radius: 5px;
-  margin: 0 0 128px 0;
-
+  margin-top: 80px;
+  width: 240px;
+  height: 70px;
+  font-size: 23px;
+}
+.section_white {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.text_left {
+  float: left;
+  width: 500px;
+}
+.image_right {
+  float: right;
+  width: 340px;
+}
+.section_white::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.plain_text {
+  font-size: 18px;
+}
+.section_grey {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #808080;
+}
+.text_right {
+  float: right;
+  width: 500px;
+}
+.image_left {
+  float: left;
+  width: 340px;
+}
+.section_grey::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.competencies {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.competencies_left {
+  float: left;
+  width: 50%;
+}
+.competencies_right {
+  float: left;
+  width: 50%;
+}
+.competencies::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.competencies_item_image {
+  float: left;
+  width: 25%;
+  height: 70px;
+  width: 70px;
+}
+.competencies_item_text {
+  float: left;
+  width: 75%;
+  font-size: 18px;
+  margin: 0 0 0 20px;
+}
+.competencies_item {
+  clear: both;
+  display: table;
+  content: "";
+  padding-bottom: 60px;
+}
+.text_in_center_1 {
+  text-align: center;
+  font-size: 60px;
+}
+.text_in_center_2 {
+  text-align: center;
+  font-size: 22px;
+}
+.client_feedback_1_image {
+  float: left;
+  height: 225px;
+  width: 225px;
+}
+.client_feedback_1_text {
+  float: right;
+  width: 490px;
+  height: 170px;
+  margin: 0 0 0 50px;
+  border: solid 2px;
+  padding: 40px 75px 40px 75px;
+}
+.client_feedback_1 {
+  clear: both;
+  display: table;
+  content: "";
+  padding-bottom: 90px;
+}
+.client_feedback_2_image {
+  float: right;
+  height: 225px;
+  width: 225px;
+}
+.client_feedback_2_text {
+  float: left;
+  width: 490px;
+  height: 170px;
+  margin: 0 50px 0 0px;
+  border: solid 2px;
+  padding: 40px 75px 40px 75px;
+}
+.client_feedback_2 {
+  clear: both;
+  display: table;
+  content: "";
+  padding-bottom: 90px;
+}
+.client_feedback_quote {
+  font-size: 26px;
+}
+.client_feedback_author {
+  font-size: 22px;
+  color: #0000cd;
 }
